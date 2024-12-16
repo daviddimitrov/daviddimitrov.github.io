@@ -1,69 +1,419 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Dimitrov - Web Consultant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            max-width: 600px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 36px;
-            color: #2c3e50;
-        }
-        p {
-            font-size: 18px;
-            color: #34495e;
-        }
-        .services {
-            margin-top: 20px;
-            text-align: left;
-        }
-        .services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .services li {
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/dd_digital_solutions_light.png" rel="icon">
+  <link href="assets/img/dd_digital_solutions_light.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
 
-    <div class="container">
-        <h1>David Dimitrov</h1>
-        <p>Web Consultant | Cloud Beratung | Security Beratung</p>
+<body class="index-page">
 
-        <div class="services">
-            <h2>Meine Dienstleistungen:</h2>
-            <ul>
-                <li>Web Design & Entwicklung</li>
-                <li>Cloud Beratung und Implementierung</li>
-                <li>Security Beratung für Web-Apps</li>
-                <li>SEO und Performance Optimierung</li>
-                <li>Implementierung von Websites und Web-Anwendungen</li>
-            </ul>
-        </div>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-        <p>Kontakt: <a href="mailto:kontakt@deinedomain.de">kontakt@deinedomain.de</a></p>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
-</body>
-</html>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/dd_digital_solutions_light.png" alt=""> 
+      <h1 class="sitename">David Dimitrov</h1>
+    </a>
 
+    <div class="social-links text-center">
+      <a target="_blank" href="https://www.credly.com/badges/7c00a674-0f82-4829-a7d8-c080f030c129" class="certificates"><i class="bi bi-patch-check-fill"></i></a>
+      <a target="_blank" href="https://github.com/daviddimitrov" class="github"><i class="bi bi-github"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/david-dimitrov-81a131169/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg-2.png" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>David Dimitrov</h2>
+        <p>I do <span class="typed" data-typed-items="Cloud Architecture, DevOps, Data Engineering, Web Development">Cloud Architecture</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I am a passionate Cloud Architect and Data Engineer with a strong foundation in consulting and technical leadership. With a deep focus on AWS cloud technologies, I specialize in designing, building, and optimizing scalable, secure, and high-performance data platforms. My expertise lies in data engineering, DevOps, and the end-to-end delivery of cloud-native solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Cloud Architect &amp; Data Engineer.</h2>
+            <p class="fst-italic py-3">
+              Throughout my career, I have guided teams and organizations to leverage cloud infrastructure for greater efficiency, agility, and innovation. From developing PySpark data pipelines to architecting ETL frameworks and implementing CI/CD, I excel at turning complex requirements into impactful solutions.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>July 1992</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Leipzig, GER</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>dd-digital-solutions@proton.me</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              As a consultant, I tackle complex problems, promote technical excellence, and empower teams to achieve their goals. My collaborative approach ensures solutions align with business objectives and industry best practices. From optimizing data workflows to driving automation and championing DevOps, I am committed to delivering meaningful results.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Highly skilled and tech-driven, I also excel in soft skills and effectively bridge the gap between technical solutions and business needs.        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>AWS</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Data Engineering</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Infrastructure as Code</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CI/CD</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>German</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>English</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Consulting</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Scrum &amp; SAFe</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Tech Lead</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>David Dimitrov</h4>
+              <p><em>With 5+ years of experience spanning cloud, data engineering, and solution engineering, I have built a versatile career at the intersection of technology and business impact.</em></p>
+              <ul>
+                <li>Leipzig, GER</li>
+                <li>dd-digital-solutions@proton.me</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science - Business Information Technology</h4>
+              <h5>2012 - 2017</h5>
+              <p><em>Universität Leipzig, GER</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item">
+              <h4>AWS Certified Cloud Practitioner</h4>
+              <h5>2022</h5>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>AWS Certified Data Engineer - Associate</h4>
+              <h5>2025</h5>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Solutions Engineer</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Deloitte</em></p>
+              <ul>
+                <li><strong>Technical Lead (Automotive, AWS):</strong> Led a team of solution architects on a large-scale data engineering project, driving technical strategy and ensuring the successful delivery of cloud-native solutions.</li>
+                <li><strong>Data Engineer (Automotive, AWS):</strong> Developed and optimized data pipelines, ETL workflows, and data lake architectures to support data-driven initiatives for automotive clients.</li>
+                <li><strong>DevOps Engineer (Finance, AWS):</strong> Built and maintained CI/CD pipelines, automated infrastructure provisioning, and improved operational efficiency for a broker application in the finance sector.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>Haufe</em></p>
+              <ul>
+                <li><strong>Software Engineer (Retail, AWS):</strong>  Developed an online library platform for B2B customers, enabling the purchase, consumption, and research of eBooks. Utilized AWS for cloud infrastructure, ensuring scalability, performance, and security.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Posterlounge</em></p>
+              <ul>
+                <li><strong>Web Developer (E-Commerce, PHP):</strong> Developed and maintained an online shop for wall art, focusing on building features to enhance user experience and streamline the purchasing process. Worked extensively with PHP to support the back-end of the platform.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>With a T-shaped skill set, I bring both deep technical expertise and broad cross-functional knowledge, making me a valuable asset in all kinds of projects.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-cloud"></i></i></div>
+            <div>
+              <h4 class="title"><a class="stretched-link">Cloud Solutions</a></h4>
+              <p class="description">Comprehensive design, development, and deployment of cloud-native applications tailored to meet business goals.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Data Engineering</a></h4>
+              <p class="description">Designing and implementing robust data pipelines, ETL processes, and data lakes to enable data-driven decision-making.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-arrow-repeat"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">DevOps Consulting</a></h4>
+              <p class="description">Streamlining development workflows, CI/CD processes, and infrastructure as code to accelerate delivery and improve reliability.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-browser-chrome"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
+              <p class="description">Building modern, responsive, and scalable web applications with a focus on usability and performance.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-shield-fill-check"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Security Enhancements</a></h4>
+              <p class="description">Identifying vulnerabilities and implementing best-practice security measures to protect cloud environments.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-cloud-upload"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Cloud Migration</a></h4>
+              <p class="description">Seamlessly transitioning applications and infrastructure to the cloud with minimal downtime and maximum efficiency.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
